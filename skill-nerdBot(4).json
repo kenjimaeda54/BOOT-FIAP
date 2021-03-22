@@ -126,6 +126,9 @@
           "text": "Harry Potter"
         },
         {
+          "text": "hary porter"
+        },
+        {
           "text": "hogwarts"
         },
         {
@@ -366,16 +369,17 @@
       "output": {
         "generic": [
           {
+            "source": "https://i.pinimg.com/originals/0e/f7/7c/0ef77cfd38f5eaf64d9a713531670cf1.jpg",
+            "response_type": "image"
+          },
+          {
             "values": [
               {
-                "text": "Seus criadores são rivais e de universo diferentes."
-              },
-              {
-                "text": "Próxima dica!!! Somos muito fãs também da mitologia grega."
+                "text": "Seus criadores são rivais e de universo diferentes.\nPróxima dica!!! Somos muito fãs também da mitologia grega."
               }
             ],
             "response_type": "text",
-            "selection_policy": "multiline"
+            "selection_policy": "sequential"
           }
         ]
       },
@@ -402,9 +406,10 @@
           }
         ]
       },
+      "parent": "node_4_1616363637375",
       "conditions": "#nome",
       "dialog_node": "node_10_1616364375540",
-      "previous_sibling": "node_4_1616364663704"
+      "previous_sibling": "node_4_1616365710649"
     },
     {
       "type": "standard",
@@ -425,9 +430,10 @@
           }
         ]
       },
+      "parent": "node_4_1616363637375",
       "conditions": "#pais",
       "dialog_node": "node_10_1616366494837",
-      "previous_sibling": "Bem-vindo"
+      "previous_sibling": "node_8_1616366113453"
     },
     {
       "type": "standard",
@@ -458,16 +464,17 @@
       "output": {
         "generic": [
           {
+            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgzeNXgV6NQxBEcScAh41tIrdqWpjhLLoGYQ&usqp=CAU",
+            "response_type": "image"
+          },
+          {
             "values": [
               {
-                "text": "Tem vários poderes e habilidades, mas a magia não está entre eles. "
-              },
-              {
-                "text": "Próxima dica!!Uma de suas principais características é sua empatia. "
+                "text": "Tem vários poderes e habilidades, mas a magia não está entre eles. \nPróxima dica!!Uma de suas principais características é sua empatia. "
               }
             ],
             "response_type": "text",
-            "selection_policy": "multiline"
+            "selection_policy": "sequential"
           }
         ]
       },
@@ -481,16 +488,17 @@
       "output": {
         "generic": [
           {
+            "source": "https://montinkantigo.s3.amazonaws.com/data/camisas/coringa-preto-e-branco-5d3ba4ea60e08-estampa-303.png",
+            "response_type": "image"
+          },
+          {
             "values": [
               {
-                "text": "Não é o coringa. Eu odeio esse personagem faz muito mau ao Batman"
-              },
-              {
-                "text": "\nPróxima dica!!! Eu já assisti os filmes, joguei os game e li os quadrinhos sou muito fã de quem estou pensando."
+                "text": "Não é o coringa. Eu odeio esse personagem faz muito mau ao Batman.\n\nPróxima dica!!! Eu já assisti os filmes, joguei os game e li os quadrinhos sou muito fã de quem estou pensando."
               }
             ],
             "response_type": "text",
-            "selection_policy": "multiline"
+            "selection_policy": "sequential"
           }
         ]
       },
@@ -517,9 +525,10 @@
           }
         ]
       },
+      "parent": "node_4_1616363637375",
       "conditions": "#filme",
       "dialog_node": "node_2_1616366246031",
-      "previous_sibling": "node_10_1616366494837"
+      "previous_sibling": "node_6_1616365953421"
     },
     {
       "type": "standard",
@@ -542,7 +551,7 @@
       },
       "conditions": "#MulherMaravilha",
       "dialog_node": "node_4_1616363637375",
-      "previous_sibling": "node_10_1616364375540"
+      "previous_sibling": "Bem-vindo"
     },
     {
       "type": "standard",
@@ -563,9 +572,10 @@
           }
         ]
       },
+      "parent": "node_4_1616363637375",
       "conditions": "#criador",
       "dialog_node": "node_4_1616364663704",
-      "previous_sibling": "node_9_1616364893004"
+      "previous_sibling": "node_4_1616365191885"
     },
     {
       "type": "standard",
@@ -586,9 +596,10 @@
           }
         ]
       },
+      "parent": "node_4_1616363637375",
       "conditions": "#armas",
       "dialog_node": "node_4_1616365089853",
-      "previous_sibling": "node_4_1616365710649"
+      "previous_sibling": "node_9_1616364893004"
     },
     {
       "type": "standard",
@@ -609,9 +620,10 @@
           }
         ]
       },
+      "parent": "node_4_1616363637375",
       "conditions": "#uniforme",
       "dialog_node": "node_4_1616365191885",
-      "previous_sibling": "node_4_1616365089853"
+      "previous_sibling": "node_10_1616366494837"
     },
     {
       "type": "standard",
@@ -632,9 +644,10 @@
           }
         ]
       },
+      "parent": "node_4_1616363637375",
       "conditions": "#quando",
       "dialog_node": "node_4_1616365710649",
-      "previous_sibling": "node_6_1616365953421"
+      "previous_sibling": "node_4_1616365089853"
     },
     {
       "type": "standard",
@@ -655,9 +668,10 @@
           }
         ]
       },
+      "parent": "node_4_1616363637375",
       "conditions": "#inimigos",
       "dialog_node": "node_6_1616365953421",
-      "previous_sibling": "node_8_1616366113453"
+      "previous_sibling": "node_10_1616364375540"
     },
     {
       "type": "standard",
@@ -665,16 +679,20 @@
       "output": {
         "generic": [
           {
+            "source": "https://http2.mlstatic.com/D_NQ_NP_944696-MLB40776478796_022020-O.jpg",
+            "response_type": "image"
+          },
+          {
             "values": [
               {
-                "text": "Não e o batman, mas o morcego e muito charmoso"
+                "text": "Não e o batman, mas o morcego  muito charmoso.\nPróxima dica!! Já foi personagem de vídeo game, era muito viciado nesse jogo"
               },
               {
-                "text": "\nPróxima dica!! Já foi personagem de vídeo game, eu era muito viciado nesse jogo."
+                "text": ""
               }
             ],
             "response_type": "text",
-            "selection_policy": "multiline"
+            "selection_policy": "sequential"
           }
         ]
       },
@@ -701,9 +719,9 @@
           }
         ]
       },
+      "parent": "node_4_1616363637375",
       "conditions": "#amor",
-      "dialog_node": "node_8_1616366113453",
-      "previous_sibling": "node_2_1616366246031"
+      "dialog_node": "node_8_1616366113453"
     },
     {
       "type": "standard",
@@ -724,9 +742,10 @@
           }
         ]
       },
+      "parent": "node_4_1616363637375",
       "conditions": "#poderes",
       "dialog_node": "node_9_1616364893004",
-      "previous_sibling": "node_4_1616365191885"
+      "previous_sibling": "node_4_1616364663704"
     }
   ],
   "counterexamples": [],
