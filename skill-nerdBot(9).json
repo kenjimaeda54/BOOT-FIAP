@@ -117,54 +117,6 @@
       "description": ""
     },
     {
-      "intent": "Harry-Potter",
-      "examples": [
-        {
-          "text": "harry"
-        },
-        {
-          "text": "Harry Potter"
-        },
-        {
-          "text": "hary porter"
-        },
-        {
-          "text": "hogwarts"
-        },
-        {
-          "text": "hp"
-        },
-        {
-          "text": "magico"
-        },
-        {
-          "text": "potter"
-        }
-      ],
-      "description": ""
-    },
-    {
-      "intent": "homemferro",
-      "examples": [
-        {
-          "text": "allcolatra de ferro"
-        },
-        {
-          "text": "homem de cobalto"
-        },
-        {
-          "text": "homem de ferro"
-        },
-        {
-          "text": "iron man"
-        },
-        {
-          "text": "vingador dourado"
-        }
-      ],
-      "description": ""
-    },
-    {
       "intent": "inimigos",
       "examples": [
         {
@@ -211,27 +163,6 @@
         },
         {
           "text": "Wonder Woman"
-        }
-      ],
-      "description": ""
-    },
-    {
-      "intent": "naruto",
-      "examples": [
-        {
-          "text": "anime"
-        },
-        {
-          "text": "mangá"
-        },
-        {
-          "text": "naru"
-        },
-        {
-          "text": "Naruto"
-        },
-        {
-          "text": "ninja"
         }
       ],
       "description": ""
@@ -346,38 +277,19 @@
   "dialog_nodes": [
     {
       "type": "standard",
-      "title": "Bem-vindo",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Olá, seja bem vindo!!Que tal primeiro descobrir quem eu sou?!A primeira diga que posso te dar estou entre esses personagens: Batman, Coringa, Homem de Ferro, Harry Potter, Naruto ou Mulher Maravilha.!!!"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "conditions": "welcome",
-      "dialog_node": "Bem-vindo"
-    },
-    {
-      "type": "standard",
       "title": "Em outros casos",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Eu não entendi. Você pode tentar reformular a frase."
+                "text": "\nUse palavras especificas referente a mim. Exemplo (armas, filmes, uniforme)"
               },
               {
-                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+                "text": ""
               },
               {
-                "text": "Eu não entendi o sentido."
+                "text": ""
               }
             ],
             "response_type": "text",
@@ -389,30 +301,6 @@
       "dialog_node": "Em outros casos",
       "previous_sibling": "node_7_1616295451424",
       "disambiguation_opt_out": true
-    },
-    {
-      "type": "standard",
-      "title": "Homem de ferro",
-      "output": {
-        "generic": [
-          {
-            "source": "https://i.pinimg.com/originals/0e/f7/7c/0ef77cfd38f5eaf64d9a713531670cf1.jpg",
-            "response_type": "image"
-          },
-          {
-            "values": [
-              {
-                "text": "Nossos criadores são rivais e de universos diferentes.\nPróxima dica!!! Estou relacionado/a com a mitologia grega."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "multiline"
-          }
-        ]
-      },
-      "conditions": "#homemferro",
-      "dialog_node": "node_10_1616295881112",
-      "previous_sibling": "node_1_1616362669766"
     },
     {
       "type": "standard",
@@ -433,8 +321,8 @@
           }
         ]
       },
-      "parent": "node_4_1616363637375",
       "conditions": "#nome",
+      "digress_in": "does_not_return",
       "dialog_node": "node_10_1616364375540",
       "previous_sibling": "node_4_1616365710649"
     },
@@ -457,57 +345,10 @@
           }
         ]
       },
-      "parent": "node_4_1616363637375",
       "conditions": "#pais",
+      "digress_in": "does_not_return",
       "dialog_node": "node_10_1616366494837",
       "previous_sibling": "node_8_1616366113453"
-    },
-    {
-      "type": "standard",
-      "title": "Naruto",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Usamos um acessório muito parecido , mas garanto que em mim fica bem melhor."
-              },
-              {
-                "text": "Próxima dica!!Minha primeira aventura foi na revista All Star Comics."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "multiline"
-          }
-        ]
-      },
-      "conditions": "#naruto",
-      "dialog_node": "node_1_1616362668897",
-      "previous_sibling": "node_4_1616363637375"
-    },
-    {
-      "type": "standard",
-      "title": "Harry Potter",
-      "output": {
-        "generic": [
-          {
-            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgzeNXgV6NQxBEcScAh41tIrdqWpjhLLoGYQ&usqp=CAU",
-            "response_type": "image"
-          },
-          {
-            "values": [
-              {
-                "text": "Tenho vários poderes e habilidades, mas a magia não está entre eles. \nPróxima dica!!Uma de minhas principais características é minhaa empatia. "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "multiline"
-          }
-        ]
-      },
-      "conditions": "#Harry-Potter",
-      "dialog_node": "node_1_1616362669766",
-      "previous_sibling": "node_1_1616362668897"
     },
     {
       "type": "standard",
@@ -525,10 +366,35 @@
           }
         ]
       },
-      "parent": "node_4_1616363637375",
       "conditions": "#steve",
+      "digress_in": "does_not_return",
       "dialog_node": "node_1_1616454536371",
       "previous_sibling": "node_8_1616454187175"
+    },
+    {
+      "type": "standard",
+      "title": "redireciona",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você ja perguntou sobre isso tenho mais opções,exemplo (armas,filmes,jogos)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_10_1616366494837"
+      },
+      "conditions": "$amor",
+      "dialog_node": "node_1_1616467727191",
+      "previous_sibling": "node_4_1616363637375"
     },
     {
       "type": "standard",
@@ -542,7 +408,7 @@
           {
             "values": [
               {
-                "text": "Não sou o coringa. Eu odeio ele, ele faz muito mau ao Batman.\n\nPróxima dica!!! Estou em filmes, quadrinhos e videogames."
+                "text": "Eu não gosto dele, acho que o Batman deveria ser mais rígido nesse assunto\n\n"
               }
             ],
             "response_type": "text",
@@ -552,7 +418,7 @@
       },
       "conditions": "#coringa",
       "dialog_node": "node_2_1616295617932",
-      "previous_sibling": "node_10_1616295881112"
+      "previous_sibling": "node_4_1616365191885"
     },
     {
       "type": "standard",
@@ -573,10 +439,10 @@
           }
         ]
       },
-      "parent": "node_4_1616363637375",
       "conditions": "#filme",
+      "digress_in": "does_not_return",
       "dialog_node": "node_2_1616366246031",
-      "previous_sibling": "node_6_1616365953421"
+      "previous_sibling": "node_1_1616454536371"
     },
     {
       "type": "standard",
@@ -590,10 +456,10 @@
           {
             "values": [
               {
-                "text": "Acertou!!!"
+                "text": "\nSeja bem-vindos chamo Diana Prince, conhecida por Mulher Maravilha!\nEstou aqui para conversar com você e responder suas perguntas ao meu respeito.\nPodem usar palavras-chaves para saber sobre meus equipamentos, local de nascimento, família..."
               },
               {
-                "text": "Me chamo Diana Prince, mais conhecida por Mulher Maravilha! Estou aqui para conversar com você e responder a suas perguntas a meu respeito!!"
+                "text": ""
               }
             ],
             "response_type": "text",
@@ -601,9 +467,9 @@
           }
         ]
       },
-      "conditions": "#MulherMaravilha",
-      "dialog_node": "node_4_1616363637375",
-      "previous_sibling": "Bem-vindo"
+      "conditions": "welcome",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1616363637375"
     },
     {
       "type": "standard",
@@ -624,10 +490,10 @@
           }
         ]
       },
-      "parent": "node_4_1616363637375",
       "conditions": "#criador",
+      "digress_in": "does_not_return",
       "dialog_node": "node_4_1616364663704",
-      "previous_sibling": "node_4_1616365191885"
+      "previous_sibling": "node_10_1616366494837"
     },
     {
       "type": "standard",
@@ -649,10 +515,10 @@
           }
         ]
       },
-      "parent": "node_4_1616363637375",
       "conditions": "#armas",
+      "digress_in": "does_not_return",
       "dialog_node": "node_4_1616365089853",
-      "previous_sibling": "node_9_1616364893004"
+      "previous_sibling": "node_2_1616366246031"
     },
     {
       "type": "standard",
@@ -673,10 +539,10 @@
           }
         ]
       },
-      "parent": "node_4_1616363637375",
       "conditions": "#uniforme",
+      "digress_in": "does_not_return",
       "dialog_node": "node_4_1616365191885",
-      "previous_sibling": "node_10_1616366494837"
+      "previous_sibling": "node_4_1616365089853"
     },
     {
       "type": "standard",
@@ -697,10 +563,10 @@
           }
         ]
       },
-      "parent": "node_4_1616363637375",
       "conditions": "#quando",
+      "digress_in": "does_not_return",
       "dialog_node": "node_4_1616365710649",
-      "previous_sibling": "node_4_1616365089853"
+      "previous_sibling": "node_9_1616364893004"
     },
     {
       "type": "standard",
@@ -721,8 +587,8 @@
           }
         ]
       },
-      "parent": "node_4_1616363637375",
       "conditions": "#inimigos",
+      "digress_in": "does_not_return",
       "dialog_node": "node_6_1616365953421",
       "previous_sibling": "node_10_1616364375540"
     },
@@ -738,7 +604,7 @@
           {
             "values": [
               {
-                "text": "Não sou o Batman, mas acho ele muito charmoso.\nPróxima dica!! Já fui personagem principal de um jogo de videogame."
+                "text": "Não vamos falar sobre o Batman, o assunto e sobre mim.\n"
               },
               {
                 "text": ""
@@ -761,20 +627,22 @@
           {
             "values": [
               {
-                "text": "\nJá tive casos românticos com: Bruce Wayne (Batman),Clark Kent (Superman),Steve Trevor"
-              },
-              {
-                "text": ""
+                "text": "\nJá tive casos românticos com: Batman,Superman e Steve Trevor, "
               }
             ],
             "response_type": "text",
-            "selection_policy": "multiline"
+            "selection_policy": "random"
           }
         ]
       },
-      "parent": "node_4_1616363637375",
+      "context": {
+        "": "",
+        "amor": 1
+      },
       "conditions": "#amor",
-      "dialog_node": "node_8_1616366113453"
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1616366113453",
+      "previous_sibling": "node_1_1616467727191"
     },
     {
       "type": "standard",
@@ -792,10 +660,10 @@
           }
         ]
       },
-      "parent": "node_4_1616363637375",
       "conditions": "#mora",
+      "digress_in": "does_not_return",
       "dialog_node": "node_8_1616454187175",
-      "previous_sibling": "node_2_1616366246031"
+      "previous_sibling": "node_6_1616365953421"
     },
     {
       "type": "standard",
@@ -816,8 +684,8 @@
           }
         ]
       },
-      "parent": "node_4_1616363637375",
       "conditions": "#poderes",
+      "digress_in": "does_not_return",
       "dialog_node": "node_9_1616364893004",
       "previous_sibling": "node_4_1616364663704"
     }
