@@ -100,6 +100,9 @@
       "intent": "comida",
       "examples": [
         {
+          "text": "comida"
+        },
+        {
           "text": "qual sua comida preferida?"
         }
       ],
@@ -193,6 +196,27 @@
         },
         {
           "text": "qual sua origem?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "idade",
+      "examples": [
+        {
+          "text": "qual e sua data de nascimento?"
+        },
+        {
+          "text": "qual sua idade?"
+        },
+        {
+          "text": "quando você nasceu?"
+        },
+        {
+          "text": "quantos anos tem esse bebe?"
+        },
+        {
+          "text": "Quantos ano você tem?"
         }
       ],
       "description": ""
@@ -507,9 +531,7 @@
           }
         ]
       },
-      "context": {
-        "pais": 1
-      },
+      "context": {},
       "conditions": "#pais",
       "digress_in": "does_not_return",
       "dialog_node": "node_10_1616366494837",
@@ -641,14 +663,69 @@
     {
       "type": "standard",
       "title": "grupo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<?$falar? \"oi\" : \"ola\" ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
       "metadata": {
         "_customization": {
-          "mcr": true
+          "mcr": false
         }
       },
       "conditions": "#supergrupo",
       "dialog_node": "node_2_1616510547043",
       "previous_sibling": "node_7_1616604772748"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ola prazer em conhecer você <?input.text ?>. Vamos para perguntas referente a mim agora!!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1616363637375",
+      "context": {
+        "username": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_2_1616630682861"
+    },
+    {
+      "type": "standard",
+      "title": "Idade",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu nasci em dezembro de 1941 ou seja hoje tenho 80 anos, mas me sinto aos 20:)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#idade",
+      "dialog_node": "node_2_1616673192971",
+      "previous_sibling": "node_4_1616363637375"
     },
     {
       "type": "standard",
@@ -662,7 +739,7 @@
           {
             "values": [
               {
-                "text": "\nSejam bem-vindos me chamo Diana Prince, mais conhecida por Mulher Maravilha ou deusa da guerra!\nEstou aqui para conversar com você e responder suas perguntas ao meu respeito.\nPodem usar palavras-chaves para saber sobre meus equipamentos, local de nascimento, família..."
+                "text": "\nSeja bem-vindo.  me chamo Diana Prince, mais conhecida por Mulher Maravilha ou deusa da guerra!\nEstou aqui para conversar com você e responder suas perguntas ao meu respeito.\nPodem usar palavras-chaves para saber sobre meus equipamentos, local de nascimento, família... \nDesculpe primeiramente como você gostaria de ser chamado?"
               },
               {
                 "text": ""
@@ -672,6 +749,9 @@
             "selection_policy": "multiline"
           }
         ]
+      },
+      "context": {
+        "texto": 1
       },
       "metadata": {
         "_customization": {
@@ -808,9 +888,7 @@
           }
         ]
       },
-      "context": {
-        "bracelete": 1
-      },
+      "context": {},
       "conditions": "#braceles",
       "dialog_node": "node_4_1616510171224",
       "previous_sibling": "node_2_1616510547043"
@@ -823,7 +901,7 @@
           {
             "values": [
               {
-                "text": "Amazona, semi-deusa"
+                "text": "Amazona, semideusa, ou seja minha mãe era humana e meu pai  deus, maior de todos Zeus."
               }
             ],
             "response_type": "text",
@@ -873,7 +951,7 @@
           {
             "values": [
               {
-                "text": "É uma ilha fictícia"
+                "text": "É uma ilha invisível protegida do mundo dos homens, sinto muitas saudades, nunca encontrei nenhum lugar mundo parecido a minha terra natal."
               }
             ],
             "response_type": "text",
@@ -883,7 +961,7 @@
       },
       "conditions": "#Themyscira",
       "dialog_node": "node_6_1616605332498",
-      "previous_sibling": "node_4_1616363637375"
+      "previous_sibling": "node_2_1616673192971"
     },
     {
       "type": "standard",
@@ -943,7 +1021,7 @@
           {
             "values": [
               {
-                "text": "\nJá tive casos românticos com: Batman,Superman e Steve Trevor, "
+                "text": "\nJá tive casos românticos com: Batman,Superman e Steve Trevor,  amei todos da minha maneira."
               }
             ],
             "response_type": "text",
@@ -1000,12 +1078,10 @@
           }
         ]
       },
-      "context": {
-        "historia": 1
-      },
+      "context": {},
       "conditions": "#historia",
       "dialog_node": "node_8_1616508716833",
-      "previous_sibling": "node_9_1616509020403"
+      "previous_sibling": "node_5_1616509569294"
     },
     {
       "type": "standard",
@@ -1036,29 +1112,6 @@
     },
     {
       "type": "standard",
-      "title": "cenas",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Conta a minha historia"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "context": {
-        "cena": 1
-      },
-      "conditions": "#cenas",
-      "dialog_node": "node_9_1616509020403",
-      "previous_sibling": "node_5_1616509569294"
-    },
-    {
-      "type": "standard",
       "title": "laço",
       "output": {
         "generic": [
@@ -1076,29 +1129,6 @@
       "conditions": "#laço",
       "dialog_node": "node_9_1616605051588",
       "previous_sibling": "node_6_1616605332498"
-    },
-    {
-      "type": "response_condition",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "<?$falar? \"Oi\" : \"OLA\"  ?>"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_2_1616510547043",
-      "context": {
-        "falar": "<?$contador == 2?>",
-        "contador": "<? $contador  + 1   ?>"
-      },
-      "conditions": "#supergrupo",
-      "dialog_node": "response_10_1616581180235"
     },
     {
       "type": "response_condition",
@@ -1124,7 +1154,8 @@
       },
       "parent": "node_4_1616363637375",
       "disabled": true,
-      "dialog_node": "response_7_1616581127762"
+      "dialog_node": "response_7_1616581127762",
+      "previous_sibling": "node_2_1616630682861"
     }
   ],
   "counterexamples": [],
