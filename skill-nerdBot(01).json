@@ -7,6 +7,9 @@
           "text": "amor"
         },
         {
+          "text": "quem sao seus amores?"
+        },
+        {
           "text": "voce e apaixonada em alguém?"
         },
         {
@@ -150,6 +153,27 @@
       "description": ""
     },
     {
+      "intent": "DCcomics",
+      "examples": [
+        {
+          "text": "DC comics"
+        },
+        {
+          "text": "DCCOMICS"
+        },
+        {
+          "text": "empressa norte americano que você pertence"
+        },
+        {
+          "text": "O que e DC comics?"
+        },
+        {
+          "text": "qual empressa você trabalha"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "especie",
       "examples": [
         {
@@ -168,6 +192,27 @@
       "description": ""
     },
     {
+      "intent": "filhos",
+      "examples": [
+        {
+          "text": "e as crianças"
+        },
+        {
+          "text": "filhos"
+        },
+        {
+          "text": "possui quantos filhos?"
+        },
+        {
+          "text": "quer ter filhos"
+        },
+        {
+          "text": "tem filhos?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "filme",
       "examples": [
         {
@@ -178,6 +223,24 @@
         },
         {
           "text": "quando lançou seu primiero filme?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "habilidades",
+      "examples": [
+        {
+          "text": "quais os poderes dela?"
+        },
+        {
+          "text": "quais poderes ela tem"
+        },
+        {
+          "text": "quais são os poderes da mulher maravilha?"
+        },
+        {
+          "text": "quais suas habilidades"
         }
       ],
       "description": ""
@@ -243,7 +306,16 @@
       "intent": "laço",
       "examples": [
         {
+          "text": "e qual a mais poderosa?"
+        },
+        {
+          "text": "oque e o laço?"
+        },
+        {
           "text": "qual seu acessório mais poderoso?"
+        },
+        {
+          "text": "você tem um laço?"
         }
       ],
       "description": ""
@@ -342,19 +414,22 @@
       "description": ""
     },
     {
-      "intent": "poderes",
+      "intent": "poders",
       "examples": [
         {
-          "text": "quais os poderes dela?"
+          "text": "Alguem falou que tu tem poder?"
         },
         {
-          "text": "quais poderes ela tem"
+          "text": "Como descobriu seus poderes?"
         },
         {
-          "text": "quais são os poderes da mulher maravilha?"
+          "text": "Como você descobriu sesus poders"
         },
         {
-          "text": "quais suas habilidades"
+          "text": "Você nasceu sabedno que tem poder?"
+        },
+        {
+          "text": "VOce sabia desde de pequena seus poders?"
         }
       ],
       "description": ""
@@ -373,6 +448,9 @@
         },
         {
           "text": "quando ela pareceu pela primeira vez?"
+        },
+        {
+          "text": "quando foi sua primeira aventura?"
         }
       ],
       "description": ""
@@ -406,6 +484,9 @@
         },
         {
           "text": "voce faz parte de que grupo"
+        },
+        {
+          "text": "você pertence ao gurpo?"
         }
       ],
       "description": ""
@@ -415,6 +496,9 @@
       "examples": [
         {
           "text": "onde fica Themyscira?"
+        },
+        {
+          "text": "Oque e thesmyscira?"
         }
       ],
       "description": ""
@@ -466,7 +550,7 @@
           {
             "values": [
               {
-                "text": "\nUse palavras especificas referente a mim. Exemplo (armas, filmes, uniforme)"
+                "text": "Nâo entendi sua pergunta $username, pode repetir de outra maneira.Usa palavras especificas."
               },
               {
                 "text": ""
@@ -493,7 +577,7 @@
           {
             "values": [
               {
-                "text": "Meu nome é Princesa Diana de Themyscira, mas muitos me conhecem como princesa Amazonas ou deusa da guerra. E no mundo dos homens, assumo a identidade de Diana Prince."
+                "text": "Eu ja me apresentei! $username. Meu nome é Princesa Diana de Themyscira, mas muitos me conhecem como princesa Amazonas ou deusa da guerra. E no mundo dos homens, assumo a identidade de Diana Prince."
               },
               {
                 "text": ""
@@ -504,9 +588,7 @@
           }
         ]
       },
-      "context": {
-        "nome": 1
-      },
+      "context": {},
       "conditions": "#nome",
       "digress_in": "does_not_return",
       "dialog_node": "node_10_1616364375540",
@@ -545,7 +627,7 @@
           {
             "values": [
               {
-                "text": "Salvando vidas para companhia DC Comics. "
+                "text": "Trabalho salvando vidas para companhia DC Comics.  "
               }
             ],
             "response_type": "text",
@@ -555,7 +637,27 @@
       },
       "conditions": "#trabalha",
       "dialog_node": "node_10_1616604866526",
-      "previous_sibling": "node_1_1616604959916"
+      "previous_sibling": "node_9_1616605051588"
+    },
+    {
+      "type": "standard",
+      "title": "filhos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\nEu não tenho filhos.\nMeu foco é salvar vidas. Inclusive todos que já amei ou amo, estão comprometidos com outros objetivos ou morreram."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#filhos",
+      "dialog_node": "node_10_1616724447204",
+      "previous_sibling": "node_7_1616725381328"
     },
     {
       "type": "standard",
@@ -577,33 +679,11 @@
           }
         ]
       },
-      "context": {
-        "steve": 1
-      },
+      "context": {},
       "conditions": "#steve",
       "digress_in": "does_not_return",
       "dialog_node": "node_1_1616454536371",
       "previous_sibling": "node_8_1616454187175"
-    },
-    {
-      "type": "standard",
-      "title": "namorado",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Meu primeiro amor foi o Steve Trevor! Foi o homem com quem me casei!"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "conditions": "#namorado",
-      "dialog_node": "node_1_1616604959916",
-      "previous_sibling": "node_9_1616605051588"
     },
     {
       "type": "standard",
@@ -625,9 +705,7 @@
           }
         ]
       },
-      "context": {
-        "coringa": 1
-      },
+      "context": {},
       "conditions": "#coringa",
       "dialog_node": "node_2_1616295617932",
       "previous_sibling": "node_4_1616365191885"
@@ -652,9 +730,7 @@
           }
         ]
       },
-      "context": {
-        "filmes": 1
-      },
+      "context": {},
       "conditions": "#filme",
       "digress_in": "does_not_return",
       "dialog_node": "node_2_1616366246031",
@@ -662,13 +738,13 @@
     },
     {
       "type": "standard",
-      "title": "grupo",
+      "title": "supergrupo",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "<?$falar? \"oi\" : \"ola\" ?>"
+                "text": "Pertenço a Liga da Justiça!"
               }
             ],
             "response_type": "text",
@@ -725,7 +801,7 @@
       },
       "conditions": "#idade",
       "dialog_node": "node_2_1616673192971",
-      "previous_sibling": "node_4_1616363637375"
+      "previous_sibling": "node_10_1616724447204"
     },
     {
       "type": "standard",
@@ -739,7 +815,7 @@
           {
             "values": [
               {
-                "text": "\nSeja bem-vindo.  me chamo Diana Prince, mais conhecida por Mulher Maravilha ou deusa da guerra!\nEstou aqui para conversar com você e responder suas perguntas ao meu respeito.\nPodem usar palavras-chaves para saber sobre meus equipamentos, local de nascimento, família... \nDesculpe primeiramente como você gostaria de ser chamado?"
+                "text": "\nSeja bem-vindo.  Me chamo Diana Prince, mais conhecida por Mulher Maravilha ou deusa da guerra!\nEstou aqui para conversar com você e responder suas perguntas ao meu respeito.\nPodem usar palavras-chaves para saber sobre meus equipamentos, local de nascimento, família... \nDesculpe primeiramente como você gostaria de ser chamado/a?"
               },
               {
                 "text": ""
@@ -781,9 +857,7 @@
           }
         ]
       },
-      "context": {
-        "criador": 1
-      },
+      "context": {},
       "conditions": "#criador",
       "digress_in": "does_not_return",
       "dialog_node": "node_4_1616364663704",
@@ -809,9 +883,7 @@
           }
         ]
       },
-      "context": {
-        "armas": 1
-      },
+      "context": {},
       "conditions": "#armas",
       "digress_in": "does_not_return",
       "dialog_node": "node_4_1616365089853",
@@ -837,9 +909,7 @@
           }
         ]
       },
-      "context": {
-        "uniforme": 1
-      },
+      "context": {},
       "conditions": "#uniforme",
       "digress_in": "does_not_return",
       "dialog_node": "node_4_1616365191885",
@@ -864,9 +934,7 @@
           }
         ]
       },
-      "context": {
-        "quando": 1
-      },
+      "context": {},
       "conditions": "#quando",
       "digress_in": "does_not_return",
       "dialog_node": "node_4_1616365710649",
@@ -895,6 +963,27 @@
     },
     {
       "type": "standard",
+      "title": "descobriu poderes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\nEu desde pequena soube dos meus poderes, minha mãe apos esculpir do barro me deu esses poderes, inclusive na ilha todos treinam desde da infância.Somos amazonas.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#poders",
+      "dialog_node": "node_4_1616725410163",
+      "previous_sibling": "node_4_1616363637375"
+    },
+    {
+      "type": "standard",
       "title": "espécie",
       "output": {
         "generic": [
@@ -909,9 +998,7 @@
           }
         ]
       },
-      "context": {
-        "deusa": 1
-      },
+      "context": {},
       "conditions": "#especie",
       "dialog_node": "node_5_1616509569294",
       "previous_sibling": "node_4_1616510171224"
@@ -935,9 +1022,7 @@
           }
         ]
       },
-      "context": {
-        "inimigos": 1
-      },
+      "context": {},
       "conditions": "#inimigos",
       "digress_in": "does_not_return",
       "dialog_node": "node_6_1616365953421",
@@ -951,7 +1036,7 @@
           {
             "values": [
               {
-                "text": "É uma ilha invisível protegida do mundo dos homens, sinto muitas saudades, nunca encontrei nenhum lugar mundo parecido a minha terra natal."
+                "text": "É uma ilha invisível protegida do mundo dos homens, sinto muitas saudades, nunca encontrei nenhum lugar no mundo parecido a minha terra natal."
               }
             ],
             "response_type": "text",
@@ -975,7 +1060,7 @@
           {
             "values": [
               {
-                "text": "Não vamos falar sobre o Batman, o assunto e sobre mim.\n"
+                "text": "Não vamos falar sobre o Batman, o assunto e sobre mim. \n<? $batman ? \"Novamente sobre ele não acredito \"  :  \" Vamos para proxima\" ?>\n"
               },
               {
                 "text": ""
@@ -986,9 +1071,7 @@
           }
         ]
       },
-      "context": {
-        "batman": 1
-      },
+      "context": {},
       "conditions": "#Batman",
       "dialog_node": "node_7_1616295451424",
       "previous_sibling": "node_2_1616295617932"
@@ -1015,13 +1098,36 @@
     },
     {
       "type": "standard",
+      "title": "Dc comics",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A DC Comics é uma editora norte-americana subsidiária da companhia WarnerMedia situada em Burbank, Califórnia, especializada em histórias em quadrinhos e mídias relacionadas, sendo considerada uma das maiores companhias ligadas a este ramo no mundo"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "poderes": true
+      },
+      "conditions": "#DCcomics",
+      "dialog_node": "node_7_1616725381328",
+      "previous_sibling": "node_4_1616725410163"
+    },
+    {
+      "type": "standard",
       "title": "amor",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "\nJá tive casos românticos com: Batman,Superman e Steve Trevor,  amei todos da minha maneira."
+                "text": "\nJá tive casos românticos com: Batman,Superman e Steve Trevor,  amei todos da minha maneira. \nEstou gostando vamos para mais perguntas $username"
               }
             ],
             "response_type": "text",
@@ -1030,8 +1136,7 @@
         ]
       },
       "context": {
-        "": "",
-        "amor": 1
+        "batman": true
       },
       "conditions": "#amor",
       "digress_in": "does_not_return",
@@ -1054,9 +1159,7 @@
           }
         ]
       },
-      "context": {
-        "mora": 1
-      },
+      "context": {},
       "conditions": "#mora",
       "digress_in": "does_not_return",
       "dialog_node": "node_8_1616454187175",
@@ -1085,7 +1188,7 @@
     },
     {
       "type": "standard",
-      "title": "poderes e habilidades",
+      "title": "habilidades",
       "output": {
         "generic": [
           {
@@ -1102,10 +1205,8 @@
           }
         ]
       },
-      "context": {
-        "poderes": 1
-      },
-      "conditions": "#poderes",
+      "context": {},
+      "conditions": "#habilidades",
       "digress_in": "does_not_return",
       "dialog_node": "node_9_1616364893004",
       "previous_sibling": "node_4_1616364663704"
