@@ -1,0 +1,1283 @@
+{
+  "intents": [
+    {
+      "intent": "amor",
+      "examples": [
+        {
+          "text": "amor"
+        },
+        {
+          "text": "quem sao seus amores?"
+        },
+        {
+          "text": "voce e apaixonada em alguém?"
+        },
+        {
+          "text": "voce ja namorou?"
+        },
+        {
+          "text": "voce namora?"
+        },
+        {
+          "text": "voce tem algum caso amoroso?"
+        },
+        {
+          "text": "voce tem crush?"
+        },
+        {
+          "text": "voce tem um amor?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "armas",
+      "examples": [
+        {
+          "text": "quais armas ela usa?"
+        },
+        {
+          "text": "quais suas armas?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Batman",
+      "examples": [
+        {
+          "text": "Batman"
+        },
+        {
+          "text": "btman"
+        },
+        {
+          "text": "cavaleiro das trevas"
+        },
+        {
+          "text": "detetive das sombras"
+        },
+        {
+          "text": "homem morcego"
+        },
+        {
+          "text": "morcego"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "braceles",
+      "examples": [
+        {
+          "text": "bracelete"
+        },
+        {
+          "text": "como sao seus braceletes?"
+        },
+        {
+          "text": "para que servem seus braceletes?"
+        },
+        {
+          "text": "qual é o nome dos seus braceles?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "cenas",
+      "examples": [
+        {
+          "text": "cenas"
+        },
+        {
+          "text": "o que passa nas cenas pos creditos do seu filme?"
+        },
+        {
+          "text": "seu filme tem cenas pos créditos?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "comida",
+      "examples": [
+        {
+          "text": "comida"
+        },
+        {
+          "text": "qual sua comida preferida?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coringa",
+      "examples": [
+        {
+          "text": "coringa"
+        },
+        {
+          "text": "flagelo de ghotan"
+        },
+        {
+          "text": "jack napier"
+        },
+        {
+          "text": "joker"
+        },
+        {
+          "text": "louco"
+        },
+        {
+          "text": "palhaço"
+        }
+      ]
+    },
+    {
+      "intent": "criador",
+      "examples": [
+        {
+          "text": "Por quem ela foi criada?"
+        },
+        {
+          "text": "quem criou a personagem?"
+        },
+        {
+          "text": "Quem criou ela?"
+        },
+        {
+          "text": "quem são seus criadores?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "DCcomics",
+      "examples": [
+        {
+          "text": "DC comics"
+        },
+        {
+          "text": "DCCOMICS"
+        },
+        {
+          "text": "empressa norte americano que você pertence"
+        },
+        {
+          "text": "O que e DC comics?"
+        },
+        {
+          "text": "qual empressa você trabalha"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "especie",
+      "examples": [
+        {
+          "text": "deusa"
+        },
+        {
+          "text": "especie"
+        },
+        {
+          "text": "o que voce é?"
+        },
+        {
+          "text": "qual sua especie?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "filhos",
+      "examples": [
+        {
+          "text": "e as crianças"
+        },
+        {
+          "text": "filhos"
+        },
+        {
+          "text": "possui quantos filhos?"
+        },
+        {
+          "text": "quer ter filhos"
+        },
+        {
+          "text": "tem filhos?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "filme",
+      "examples": [
+        {
+          "text": "ela tem filme?"
+        },
+        {
+          "text": "quais filmes ela aparece?"
+        },
+        {
+          "text": "quando lançou seu primiero filme?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "habilidades",
+      "examples": [
+        {
+          "text": "quais os poderes dela?"
+        },
+        {
+          "text": "quais poderes ela tem"
+        },
+        {
+          "text": "quais são os poderes da mulher maravilha?"
+        },
+        {
+          "text": "quais suas habilidades"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "historia",
+      "examples": [
+        {
+          "text": "como tudo comecou"
+        },
+        {
+          "text": "historia"
+        },
+        {
+          "text": "qual sua historia"
+        },
+        {
+          "text": "qual sua origem?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "idade",
+      "examples": [
+        {
+          "text": "qual e sua data de nascimento?"
+        },
+        {
+          "text": "qual sua idade?"
+        },
+        {
+          "text": "quando você nasceu?"
+        },
+        {
+          "text": "quantos anos tem esse bebe?"
+        },
+        {
+          "text": "Quantos ano você tem?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "inimigos",
+      "examples": [
+        {
+          "text": "ela tem inimigos?"
+        },
+        {
+          "text": "quais os inimigos dela?"
+        },
+        {
+          "text": "quais sao os seus inimigos?"
+        },
+        {
+          "text": "quem sao seus inimigos?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "laço",
+      "examples": [
+        {
+          "text": "e qual a mais poderosa?"
+        },
+        {
+          "text": "oque e o laço?"
+        },
+        {
+          "text": "qual seu acessório mais poderoso?"
+        },
+        {
+          "text": "você tem um laço?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "mora",
+      "examples": [
+        {
+          "text": "de onde voce e?"
+        },
+        {
+          "text": "Onde voce mora?"
+        },
+        {
+          "text": "onde voce nasceu?"
+        },
+        {
+          "text": "qual sua terra natal?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "MulherMaravilha",
+      "examples": [
+        {
+          "text": "Amazonas"
+        },
+        {
+          "text": "Diana"
+        },
+        {
+          "text": "Diana Prince"
+        },
+        {
+          "text": "Mulher Maravilha"
+        },
+        {
+          "text": "Wonder Woman"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "namorado",
+      "examples": [
+        {
+          "text": "quem foi seu primeiro amor?"
+        },
+        {
+          "text": "quem foi seu primeiro namorado?"
+        },
+        {
+          "text": "voce é casada?"
+        },
+        {
+          "text": "voce tem marido?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "nome",
+      "examples": [
+        {
+          "text": "como ela é conhecida?"
+        },
+        {
+          "text": "Qual o nome da mulher maravilha?"
+        },
+        {
+          "text": "qual o seu verdadeiro nome?"
+        },
+        {
+          "text": "qual seu nome?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "pais",
+      "examples": [
+        {
+          "text": "ela tem familia?"
+        },
+        {
+          "text": "ela tem mae e pai?"
+        },
+        {
+          "text": "ela tem pais?"
+        },
+        {
+          "text": "quem são seus pais?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "poders",
+      "examples": [
+        {
+          "text": "Alguem falou que tu tem poder?"
+        },
+        {
+          "text": "Como descobriu seus poderes?"
+        },
+        {
+          "text": "Como você descobriu sesus poders"
+        },
+        {
+          "text": "Você nasceu sabedno que tem poder?"
+        },
+        {
+          "text": "VOce sabia desde de pequena seus poders?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "quando",
+      "examples": [
+        {
+          "text": "em que ano ela foi criada?"
+        },
+        {
+          "text": "em que ano ela surgiu?"
+        },
+        {
+          "text": "quando ela foi criada?"
+        },
+        {
+          "text": "quando ela pareceu pela primeira vez?"
+        },
+        {
+          "text": "quando foi sua primeira aventura?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "steve",
+      "examples": [
+        {
+          "text": "como conheceu o steve"
+        },
+        {
+          "text": "como conheceu o steve trevor"
+        },
+        {
+          "text": "o que rola entre voce e o steve"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "supergrupo",
+      "examples": [
+        {
+          "text": "a qual grupo voce pertence?"
+        },
+        {
+          "text": "a qual supergrupo vocepertence?"
+        },
+        {
+          "text": "grupo"
+        },
+        {
+          "text": "voce faz parte de que grupo"
+        },
+        {
+          "text": "você pertence ao gurpo?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Themyscira",
+      "examples": [
+        {
+          "text": "onde fica Themyscira?"
+        },
+        {
+          "text": "Oque e thesmyscira?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "trabalha",
+      "examples": [
+        {
+          "text": "com o que voce trabalha?"
+        },
+        {
+          "text": "onde voce trabalha?"
+        },
+        {
+          "text": "voce trabalha?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "uniforme",
+      "examples": [
+        {
+          "text": "armadura"
+        },
+        {
+          "text": "como é seu uniforme?"
+        },
+        {
+          "text": "seu uniforme é composto por quais elementos?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nâo entendi sua pergunta $username, pode repetir de outra maneira.Usa palavras especificas."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_7_1616295451424",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "nome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu ja me apresentei! $username. Meu nome é Princesa Diana de Themyscira, mas muitos me conhecem como princesa Amazonas ou deusa da guerra. E no mundo dos homens, assumo a identidade de Diana Prince."
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#nome",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1616364375540",
+      "previous_sibling": "node_4_1616365710649"
+    },
+    {
+      "type": "standard",
+      "title": "pais",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Meus pais são conhecidos por Hipólita e Zeus: \"esculpida do barro por Hipólita e trazida vida por Zeus\""
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#pais",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1616366494837",
+      "previous_sibling": "node_8_1616366113453"
+    },
+    {
+      "type": "standard",
+      "title": "trabalha",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Trabalho salvando vidas para companhia DC Comics.  "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#trabalha",
+      "dialog_node": "node_10_1616604866526",
+      "previous_sibling": "node_9_1616605051588"
+    },
+    {
+      "type": "standard",
+      "title": "filhos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\nEu não tenho filhos.\nMeu foco é salvar vidas. Inclusive todos que já amei ou amo, estão comprometidos com outros objetivos ou morreram."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#filhos",
+      "dialog_node": "node_10_1616724447204",
+      "previous_sibling": "node_7_1616725381328"
+    },
+    {
+      "type": "standard",
+      "title": "steve ",
+      "output": {
+        "generic": [
+          {
+            "source": "http://br.web.img2.acsta.net/r_1280_720/newsv7/18/06/15/23/54/1748793.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Minha vida  sofreu grandes alterações assim que um avião caiu nas águas que banhavam a ilha de Themyscira. Este avião estava sendo pilotado pelo Steve Trevor e eu o salvei, o retirando do mar e o levando para terra, e foi assim que nos conhecemos e nosso caso amoroso começou. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#steve",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1616454536371",
+      "previous_sibling": "node_8_1616454187175"
+    },
+    {
+      "type": "standard",
+      "title": "Coringa",
+      "output": {
+        "generic": [
+          {
+            "source": "https://montinkantigo.s3.amazonaws.com/data/camisas/coringa-preto-e-branco-5d3ba4ea60e08-estampa-303.png",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Eu não gosto dele, acho que o Batman deveria ser mais rígido nesse assunto\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#coringa",
+      "dialog_node": "node_2_1616295617932",
+      "previous_sibling": "node_4_1616365191885"
+    },
+    {
+      "type": "standard",
+      "title": "filmes",
+      "output": {
+        "generic": [
+          {
+            "source": "https://upload.wikimedia.org/wikipedia/pt/9/9f/Mulher_Maravilha_2009.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "\nMeu primeiro filme foi  lançado em 1 de junho de 2017, e  apareço em outros filmes como Liga da Justiça e Batman vs Superman.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#filme",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1616366246031",
+      "previous_sibling": "node_1_1616454536371"
+    },
+    {
+      "type": "standard",
+      "title": "supergrupo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pertenço a Liga da Justiça!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#supergrupo",
+      "dialog_node": "node_2_1616510547043",
+      "previous_sibling": "node_7_1616604772748"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ola prazer em conhecer você <?input.text ?>. Vamos para perguntas referente a mim agora!!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1616363637375",
+      "context": {
+        "username": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_2_1616630682861"
+    },
+    {
+      "type": "standard",
+      "title": "Idade",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu nasci em dezembro de 1941 ou seja hoje tenho 80 anos, mas me sinto aos 20:)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#idade",
+      "dialog_node": "node_2_1616673192971",
+      "previous_sibling": "node_10_1616724447204"
+    },
+    {
+      "type": "standard",
+      "title": "Mulher Maravilha",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.opresente.com.br/wp-content/uploads/2019/06/mulher-maravilha-750x380.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "\nSeja bem-vindo.  Me chamo Diana Prince, mais conhecida por Mulher Maravilha ou deusa da guerra!\nEstou aqui para conversar com você e responder suas perguntas ao meu respeito.\nPodem usar palavras-chaves para saber sobre meus equipamentos, local de nascimento, família... \nDesculpe primeiramente como você gostaria de ser chamado/a?"
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "context": {
+        "texto": 1
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "welcome",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1616363637375"
+    },
+    {
+      "type": "standard",
+      "title": "criador",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Meu criador é o William Moulton Marston. Seu ideal primário era mostrar como o mundo seria melhor se liderado por mulheres. As primeiras revistas em quadrinhos surgiram na década de 1930, criadas por Maxwell Gaines. Porém logo surgiu a DC Comics hoje em dia reconhecida como a minha maior criadora."
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#criador",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1616364663704",
+      "previous_sibling": "node_10_1616366494837"
+    },
+    {
+      "type": "standard",
+      "title": "armas",
+      "output": {
+        "generic": [
+          {
+            "source": "https://s.aficionados.com.br/imagens/moviegif4.gif",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Minhas armas são meu laço mágico/laço da verdade, braceletes indestrutíveis ,tiara real, jato invisível, espada mágica, meu jato invisivel  e meu escudo claro!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#armas",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1616365089853",
+      "previous_sibling": "node_2_1616366246031"
+    },
+    {
+      "type": "standard",
+      "title": "uniforme",
+      "output": {
+        "generic": [
+          {
+            "source": "https://feededigno.com.br/wp-content/uploads/2019/08/mulher-maravilha-1984.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Meu uniforme é  vermelho, azul ,e amarelo, sendo aprimorado para o dourado nos últimos anos. É composto por um bracelete, tiara real, e meu laço. A e também tenho minha armadura de Águia Dourada composta por 280 peças."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#uniforme",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1616365191885",
+      "previous_sibling": "node_4_1616365089853"
+    },
+    {
+      "type": "standard",
+      "title": "quando",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Minha primeira aventura foi na revista All Star Comics #8 de dezembro de 1941. "
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#quando",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1616365710649",
+      "previous_sibling": "node_9_1616364893004"
+    },
+    {
+      "type": "standard",
+      "title": "braceletes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Braceletes da Submissão que  também servem para manter meus poderes controlados.\nForam feitos com os restos do lendário escudo de Zeus, o Aegis, me  dão uma defesa impenetrável, que aliada com os reflexos rápidos , fazem com que eu consiga me esquivar de projéteis com extrema facilidade e até mesmo disparos de energia e ataques físicos.\nQuando batidos um contra o outro eles conseguem liberar um impacto de energia tão poderoso quanto os raios de Zeus. Eles são indestrutíveis. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#braceles",
+      "dialog_node": "node_4_1616510171224",
+      "previous_sibling": "node_2_1616510547043"
+    },
+    {
+      "type": "standard",
+      "title": "descobriu poderes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\nEu desde pequena soube dos meus poderes, minha mãe apos esculpir do barro me deu esses poderes, inclusive na ilha todos treinam desde da infância.Somos amazonas.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#poders",
+      "dialog_node": "node_4_1616725410163",
+      "previous_sibling": "node_4_1616363637375"
+    },
+    {
+      "type": "standard",
+      "title": "espécie",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Amazona, semideusa, ou seja minha mãe era humana e meu pai  deus, maior de todos Zeus."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#especie",
+      "dialog_node": "node_5_1616509569294",
+      "previous_sibling": "node_4_1616510171224"
+    },
+    {
+      "type": "standard",
+      "title": "inimigos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Meus principais inimigos são: Mulher-Leopardo, Ares, Giganta,  Circe"
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#inimigos",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1616365953421",
+      "previous_sibling": "node_10_1616364375540"
+    },
+    {
+      "type": "standard",
+      "title": "Themyscira",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É uma ilha invisível protegida do mundo dos homens, sinto muitas saudades, nunca encontrei nenhum lugar no mundo parecido a minha terra natal."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Themyscira",
+      "dialog_node": "node_6_1616605332498",
+      "previous_sibling": "node_2_1616673192971"
+    },
+    {
+      "type": "standard",
+      "title": "Batman",
+      "output": {
+        "generic": [
+          {
+            "source": "https://http2.mlstatic.com/D_NQ_NP_944696-MLB40776478796_022020-O.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Não vamos falar sobre o Batman, o assunto e sobre mim. \n<? $batman ? \"Novamente sobre ele não acredito \"  :  \" Vamos para proxima\" ?>\n"
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#Batman",
+      "dialog_node": "node_7_1616295451424",
+      "previous_sibling": "node_2_1616295617932"
+    },
+    {
+      "type": "standard",
+      "title": "comida",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu amo sorvete, é maravilhoso!!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#comida",
+      "dialog_node": "node_7_1616604772748",
+      "previous_sibling": "node_10_1616604866526"
+    },
+    {
+      "type": "standard",
+      "title": "Dc comics",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A DC Comics é uma editora norte-americana subsidiária da companhia WarnerMedia situada em Burbank, Califórnia, especializada em histórias em quadrinhos e mídias relacionadas, sendo considerada uma das maiores companhias ligadas a este ramo no mundo"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "poderes": true
+      },
+      "conditions": "#DCcomics",
+      "dialog_node": "node_7_1616725381328",
+      "previous_sibling": "node_4_1616725410163"
+    },
+    {
+      "type": "standard",
+      "title": "amor",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\nJá tive casos românticos com: Batman,Superman e Steve Trevor,  amei todos da minha maneira. \nEstou gostando vamos para mais perguntas $username"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "context": {
+        "batman": true
+      },
+      "conditions": "#amor",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1616366113453",
+      "previous_sibling": "node_8_1616508716833"
+    },
+    {
+      "type": "standard",
+      "title": "mora",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Na Ilha do Paraiso, Themyscira. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#mora",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1616454187175",
+      "previous_sibling": "node_6_1616365953421"
+    },
+    {
+      "type": "standard",
+      "title": "historia",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu tenho uma das origens que mais sofreu alterações na história dos quadrinhos, devido às várias atualizações que eu sofri ao longo das décadas. Inicialmente, Eu fui criada de maneira mágica, a partir de uma figura de argila, na misteriosa Ilha Paraíso – um reino escondido, mais tarde chamado de Themyscira –, por minha mãe, a Rainha Hipólita. Quando adulta, durante o período da Segunda Guerra Mundial, fui enviada ao mundo dos homens (no caso, os Estados Unidos), como embaixadora da paz e para lutar contra inimigos como os alemães e os japoneses. Durante diversos períodos e reformulações, usei a identidade secreta de Diana Prince, que teve várias encarnações: enfermeira, secretária, agente do Departamento de Defesa e até dona de uma butique de moda. Em minha última reformulação, ocorrida em 2011, me tornei uma semideusa, filha de Hipólita e do deus grego, Zeus. Com atitudes mais violentas, sou  considerada a nova encarnação do deus da guerra. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#historia",
+      "dialog_node": "node_8_1616508716833",
+      "previous_sibling": "node_5_1616509569294"
+    },
+    {
+      "type": "standard",
+      "title": "habilidades",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dentre meus poderes estão minha resistência ao fogo, super força, super durabilidade, super velocidade, voo, super reflexos, super resistência, super sentido(5 sentidos bem aguçados), cura, olhos de caçador e sua empatia. "
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#habilidades",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1616364893004",
+      "previous_sibling": "node_4_1616364663704"
+    },
+    {
+      "type": "standard",
+      "title": "laço",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Meu laço da verdade é meu acessório mais poderoso!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#laço",
+      "dialog_node": "node_9_1616605051588",
+      "previous_sibling": "node_6_1616605332498"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.opresente.com.br/wp-content/uploads/2019/06/mulher-maravilha-750x380.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "\nSejam bem-vindos me chamo Diana Prince, mais conhecida por Mulher Maravilha ou deusa da guerra!\nEstou aqui para conversar com você e responder suas perguntas ao meu respeito.\nPodem usar palavras-chaves para saber sobre meus equipamentos, local de nascimento, família..."
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1616363637375",
+      "disabled": true,
+      "dialog_node": "response_7_1616581127762",
+      "previous_sibling": "node_2_1616630682861"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "nerdBot",
+  "language": "pt-br",
+  "description": ""
+}
