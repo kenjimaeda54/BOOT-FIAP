@@ -34,6 +34,9 @@
       "intent": "armas",
       "examples": [
         {
+          "text": "equipamentos"
+        },
+        {
           "text": "quais armas ela usa?"
         },
         {
@@ -573,6 +576,35 @@
       "disambiguation_opt_out": true
     },
     {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1616937778584",
+      "context": {
+        "nome": "@nome.literal"
+      },
+      "conditions": "@nome:nome",
+      "event_name": "input",
+      "dialog_node": "handler_10_1616937778620"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Por favor, eu não entendi seu nome,coloque um apelido ou so o primeiro nome,assim facilita a comunicação"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1616937778584",
+      "context": {
+        "nome_nome": "@nome.literal"
+      },
+      "event_name": "focus",
+      "dialog_node": "handler_2_1616937778620",
+      "previous_sibling": "handler_10_1616937778620"
+    },
+    {
       "type": "standard",
       "title": "nome",
       "output": {
@@ -807,12 +839,13 @@
     },
     {
       "type": "standard",
+      "title": "nome",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Ola prazer em conhecer você <?input.text ?>. Vamos para perguntas referente a mim agora!!!"
+                "text": "Ola prazer em conhecer você $username. Vamos para perguntas referente a mim agora!!!"
               }
             ],
             "response_type": "text",
@@ -862,7 +895,7 @@
           {
             "values": [
               {
-                "text": "\nSeja bem-vindo.  Me chamo Diana Prince, mais conhecida por Mulher Maravilha ou deusa da guerra!\nEstou aqui para conversar com você e responder suas perguntas ao meu respeito.\nPodem usar palavras-chaves para saber sobre meus equipamentos, local de nascimento, família... \nDesculpe primeiramente como você gostaria de ser chamado/a?"
+                "text": "\nSeja bem-vindo.  Me chamo Diana Prince, mais conhecida por Mulher Maravilha ou deusa da guerra!\nEstou aqui para conversar com você e responder suas perguntas ao meu respeito.\nPodem usar palavras-chaves para saber sobre meu  local de nascimento, família, armas... \nDesculpe primeiramente como você gostaria de ser chamado/a?"
               },
               {
                 "text": ""
@@ -873,9 +906,7 @@
           }
         ]
       },
-      "context": {
-        "texto": 1
-      },
+      "context": {},
       "metadata": {
         "_customization": {
           "mcr": false
@@ -1340,6 +1371,13 @@
       "disabled": true,
       "dialog_node": "response_7_1616581127762",
       "previous_sibling": "node_2_1616630682861"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1616630682861",
+      "variable": "$nome_nome",
+      "dialog_node": "slot_4_1616937778584"
     }
   ],
   "counterexamples": [],
